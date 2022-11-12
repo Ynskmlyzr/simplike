@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:title="Ev"
+        android:icon="@drawable/home_icon"/>
+    <item android:id="@+id/searhFragment"
+        android:title="Arama"
+        android:icon="@drawable/search_icon"/>
+    <item android:id="@+id/imageLoadingFragment"
+        android:icon="@drawable/add_icon"/>
+    <item android:id="@+id/profilFragment"
+        android:title="Profil"
+        android:icon="@drawable/person_icon"/>
+    <item android:id="@+id/messageFragment"
+        android:title="Mesaj"
+        android:icon="@drawable/message_icon"/>
+
+</menu>

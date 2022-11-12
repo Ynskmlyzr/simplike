@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.yunuskemalyazar.simplelike.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searhFragment"
+        android:name="com.yunuskemalyazar.simplelike.SearhFragment"
+        android:label="fragment_searh"
+        tools:layout="@layout/fragment_searh" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.yunuskemalyazar.simplelike.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.yunuskemalyazar.simplelike.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageLoadingFragment"
+        android:name="com.yunuskemalyazar.simplelike.ImageLoadingFragment"
+        android:label="fragment_image_loading"
+        tools:layout="@layout/fragment_image_loading" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.yunuskemalyazar.simplelike.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.yunuskemalyazar.simplelike.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+</navigation>
